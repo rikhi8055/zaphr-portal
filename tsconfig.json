@@ -11,17 +11,7 @@
     "jsx": "preserve",
     "strict": true,
     "noEmit": true,
-    "skipLibCheck": true,
-    "resolveJsonModule": true,
-    "baseUrl": ".",
-    "paths": {
-      "@/*": [
-        "./*"
-      ]
-    },
-    "types": [
-      "node"
-    ]
+    "skipLibCheck": true
   },
   "include": [
     "next-env.d.ts",

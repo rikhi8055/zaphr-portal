@@ -1,5 +1,5 @@
 import { notFound } from 'next/navigation'
-import { Card, Button } from '@/components/ui'
+import { Card, Button } from '../../components/ui'
 
 async function getEmployee(id: string){
   const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL || ''}/api/employees/${id}`, { cache: 'no-store' })

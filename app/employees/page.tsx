@@ -1,7 +1,7 @@
 'use client'
 import { useQuery } from '@tanstack/react-query'
 import Link from 'next/link'
-import { Input, Card, Skeleton, Badge } from '@/components/ui'
+import { Input, Card, Skeleton, Badge } from '../components/ui'
 
 export default function Employees(){
   const { data, isLoading } = useQuery({ queryKey: ['employees'], queryFn: async()=> (await fetch('/api/employees?limit=25')).json() })
