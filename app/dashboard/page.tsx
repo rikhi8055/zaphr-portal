@@ -1,7 +1,6 @@
 'use client'
-import { useQuery } from '@tanstack/react-query'
-import { Kpi, Card, Skeleton, Button } from '@/components/ui'
-import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, LineChart, Line } from 'recharts'
+- import { Kpi, Card, Skeleton, Button } from '@/components/ui'
++ import { Kpi, Card, Skeleton, Button } from '../components/ui'
 
 export default function Dashboard(){
   const { data, isLoading } = useQuery({ queryKey: ['dashboard'], queryFn: async()=> (await fetch('/api/dashboard')).json() })
